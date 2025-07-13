@@ -1,82 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hamsa Elassal | Portfolio</title>
+  <title>Hamsa Elasaal | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      font-family: 'Rubik', sans-serif;
+      background-color: #f8f4ff;
       color: #333;
     }
     header {
-      background-color: #4b6cb7;
+      background: linear-gradient(135deg, #7f5af0, #5e2b97);
       color: white;
-      padding: 50px 20px;
       text-align: center;
+      padding: 80px 20px 60px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    nav {
+      background-color: #4d2a8a;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 50px 20px;
     }
     h2 {
-      color: #4b6cb7;
+      color: #6a0dad;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
     }
     .project {
-      background: white;
-      border: 1px solid #ddd;
+      background: #fff;
+      border: 1px solid #e0e0e0;
       padding: 20px;
       margin-top: 20px;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     footer {
-      text-align: center;
-      background: #4b6cb7;
+      background-color: #6a0dad;
       color: white;
-      padding: 20px;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+    a {
+      color: #6a0dad;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hamsa Elassal</h1>
+    <h1>Hamsa Elasaal</h1>
     <p>Data Analyst | Statistician | Python Enthusiast</p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I’m a data analyst with a background in statistics and machine learning. I transform data into smart decisions using tools like Excel, Python, Power BI, and SQL.</p>
-    
-    <h2>Skills</h2>
-    <ul>
-      <li>Data Cleaning (Excel, Python)</li>
-      <li>Statistical Analysis (Regression, ARIMA)</li>
-      <li>Data Visualization (Power BI, Tableau)</li>
-      <li>SQL Queries & Databases</li>
-    </ul>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <h2>Projects</h2>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate data analyst with a strong background in statistics, data visualization, and machine learning. I'm currently training at EMAM Research Center, where I work with real-world data using tools like Python, R, Excel, and Power BI.</p>
+    <p>I enjoy discovering insights from raw data and building impactful visualizations that drive smart decisions. I'm also experienced in teaching statistical concepts and working on collaborative projects.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
     <div class="project">
       <h3>Electricity Forecasting with ARIMA</h3>
-      <p>Used R to forecast electricity production using modern and classical methods.</p>
+      <p>Used R to forecast electricity production with time series models (ARIMA and decomposition). Included analysis reports and plots.</p>
     </div>
-
     <div class="project">
       <h3>Nonparametric Test Analysis</h3>
-      <p>Performed hypothesis testing on custom data using R and visualized the results.</p>
+      <p>Applied statistical nonparametric tests in R to test hypotheses and visualize results using boxplots and rank-based stats.</p>
     </div>
+    <div class="project">
+      <h3>Interactive Dashboard in Power BI</h3>
+      <p>Built an interactive dashboard to analyze sales and customer segments using Power BI. Used DAX formulas and slicers.</p>
+    </div>
+  </section>
 
-    <h2>Contact</h2>
-    <p>Email: hamsa@example.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/hamsaelassal">linkedin.com/in/hamsaelassal</a></p>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:hamsa@example.com">hamsa@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/hamsaelassal" target="_blank">linkedin.com/in/hamsaelassal</a></p>
+    <p>GitHub: <a href="https://github.com/Hamsa-Elasaal" target="_blank">github.com/Hamsa-Elasaal</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Hamsa Elassal</p>
+    <p>© 2025 Hamsa Elasaal. All rights reserved.</p>
   </footer>
 
 </body>
