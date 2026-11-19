@@ -1,72 +1,423 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#ffffff">
-<meta name="description" content="Hamsa Elassal — Data Analyst portfolio. Explore experience, projects, skills and education.">
-<title>Hamsa Elassal | Data Analyst</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamsa Hani Elassal — Data Analyst Portfolio</title>
+<meta name="description" content="Portfolio of Hamsa Hani Elassal, Statistics graduate from Cairo University: data analysis, business intelligence, Python, SQL, Power BI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Roboto:wght@300;400;500&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#17152f;--muted:#55546b;--purple:#5146c8;--lav:#e9e7fb;--line:#d9d7f1;--white:#fff;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--white);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
-.nav{height:76px;position:absolute;inset:0 0 auto;z-index:5}.navin{height:100%;display:flex;align-items:center;justify-content:space-between}.mini-logo{width:56px;height:56px;border:2px solid var(--ink);border-radius:7px;display:grid;place-items:center;background:#fff}.mini-logo svg{width:42px;height:42px}.navlinks{display:flex;align-items:center;gap:38px}.navlinks a{font-size:15px;letter-spacing:.09em;text-transform:uppercase;color:#45445c}.navlinks a:hover{color:var(--purple)}.contactbtn,.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 25px;border-radius:8px;background:var(--ink);color:#fff;font-weight:700;transition:transform .2s,background .2s}.contactbtn:hover,.btn:hover{transform:translateY(-2px);background:#302b65}
-.hero{min-height:790px;position:relative;overflow:hidden;display:flex;align-items:center;text-align:center;padding:125px 0 70px}.network{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.78}.hero-inner{position:relative;z-index:1;width:min(100%,980px);margin:auto;padding:0 24px}.brandline{display:flex;align-items:center;justify-content:center;gap:30px;font-size:clamp(22px,3vw,38px);font-weight:400;letter-spacing:.2em;text-transform:uppercase;margin-bottom:27px}.brandmark{width:100px;height:100px;flex:none}.brand-rule{width:220px;height:1px;background:#5d5879;margin:0 auto 52px}.open-pill{display:inline-block;background:var(--lav);color:var(--purple);padding:7px 19px;border-radius:6px;font-size:19px;letter-spacing:.04em;margin-bottom:14px}.hero h1{font:900 clamp(48px,7.5vw,92px)/1.1 "Playfair Display",Georgia,serif;letter-spacing:-.045em;margin:0 0 35px;color:var(--ink)}.hero p{font-size:clamp(17px,2vw,25px);line-height:1.75;max-width:900px;margin:0 auto 48px;color:#25243e}.hero p strong{font-weight:700}.hero-actions{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}.btn.secondary{background:var(--lav);color:var(--ink)}.btn.secondary:hover{background:#dcd9fa}
-section{padding:92px 0;border-top:1px solid #f0eff9}.section-kicker{color:var(--purple);font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}.section-title{font:800 clamp(34px,4vw,52px)/1.15 "Playfair Display",Georgia,serif;margin:10px 0 35px}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px}.paper{border:1px solid var(--line);border-radius:14px;padding:30px;background:#fff;box-shadow:0 12px 35px rgba(43,35,110,.045)}.paper p:last-child{margin-bottom:0}.muted{color:var(--muted)}.facts{display:grid;grid-template-columns:1fr 1fr;gap:13px}.fact{padding:20px;border-radius:11px;background:#f7f6ff;border:1px solid #eeecfb}.fact small{display:block;color:#6c6888;text-transform:uppercase;letter-spacing:.1em;font-size:11px}.fact b{display:block;margin-top:5px;font-size:16px}
-.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.paper h3{font-size:19px;margin:0 0 16px}.chips{display:flex;flex-wrap:wrap;gap:9px}.chip{background:#f0effc;color:#373265;padding:7px 11px;border-radius:6px;font-size:13px}
-.timeline{display:grid;gap:0}.job{display:grid;grid-template-columns:190px 1fr;gap:25px;padding:25px 0;border-top:1px solid var(--line)}.job:last-child{border-bottom:1px solid var(--line)}.date{color:var(--purple);font-size:13px;font-weight:700;letter-spacing:.04em}.job h3{margin:0 0 3px;font-size:20px}.org{color:#5d5790;font-size:15px;margin-bottom:7px}.job p{margin:0;color:var(--muted)}
-.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.project{padding:28px;border:1px solid var(--line);border-radius:14px;background:#fff;display:flex;flex-direction:column;min-height:280px;box-shadow:0 12px 35px rgba(43,35,110,.04)}.projectno{color:var(--purple);font-size:13px;font-weight:700;letter-spacing:.13em}.project h3{font:700 25px "Playfair Display",Georgia,serif;margin:18px 0 10px}.project p{color:var(--muted);margin:0 0 20px}.project .chips{margin-top:auto}.projectlink{color:var(--purple);font-weight:700;margin-top:20px}
-.education-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:20px}.cert{padding:14px 0;border-bottom:1px solid #eceafa;display:flex;justify-content:space-between;gap:16px}.cert:last-child{border:0}.cert small{display:block;color:var(--muted)}.cert a{color:var(--purple);white-space:nowrap;font-weight:700}
-.contact-panel{background:#f7f6ff;border:1px solid var(--line);border-radius:16px;padding:40px;display:flex;align-items:center;justify-content:space-between;gap:24px}.contact-panel h2{font:800 38px "Playfair Display",Georgia,serif;margin:7px 0}.contact-panel p{color:var(--muted);margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.footer{padding:25px 0;color:#77748f;font-size:13px;display:flex;justify-content:space-between;gap:12px}
-@media(max-width:800px){.navlinks{gap:16px}.navlinks a{font-size:12px}.hero{min-height:700px}.brandline{gap:14px}.brandmark{width:76px;height:76px}.about-grid,.education-grid{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.contact-panel{align-items:flex-start;flex-direction:column}}
-@media(max-width:560px){.wrap{width:calc(100% - 32px)}.nav{height:68px}.mini-logo{width:46px;height:46px}.navlinks a:not(:last-child){display:none}.navlinks{gap:10px}.contactbtn{padding:10px 15px}.hero{min-height:720px;padding-top:110px}.brandline{font-size:18px;letter-spacing:.13em;gap:9px}.brandmark{width:64px;height:64px}.brand-rule{margin-bottom:42px;width:150px}.hero h1{font-size:48px}.hero p{font-size:17px}.skills,.projects,.facts{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:6px}section{padding:65px 0}.paper{padding:22px}.contact-panel{padding:25px}.contact-panel h2{font-size:32px}.footer{flex-direction:column}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  :root {
+    --lav: #E6E6FA;          /* main lavender, used where a gray would normally be */
+    --lav-soft: #F5F5FD;     /* very light lavender for alternate sections */
+    --lav-line: #D6D6F0;     /* borders and dividers */
+    --lav-deep: #A9A9DC;     /* network lines and nodes */
+    --ink: #15132E;          /* headings and primary buttons */
+    --text: #1F1D3A;
+    --muted: #5E5C80;
+    --accent: #4A3FB0;       /* mono tags, numbers, links on lavender */
+    --white: #FFFFFF;
+    --radius: 6px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Roboto', sans-serif; background: var(--white); color: var(--text); line-height: 1.7; font-size: 1.05rem; }
+  a { color: inherit; }
+  section { scroll-margin-top: 70px; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* NAV */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(255,255,255,0.85); backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .2s; }
+  nav.scrolled { border-bottom-color: var(--lav-line); }
+  .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; height: 68px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { width: 44px; height: 44px; display: block; }
+  .nav-right { display: flex; align-items: center; gap: 1.6rem; }
+  .nav-links { display: flex; gap: 1.6rem; list-style: none; }
+  .nav-links a { text-decoration: none; font-size: .9rem; letter-spacing: .08em; text-transform: uppercase; color: var(--text); font-weight: 300; }
+  .nav-links a:hover { color: var(--accent); }
+  .btn { display: inline-block; font-family: 'Bitter', serif; font-weight: 500; font-size: 1rem; padding: .7rem 1.4rem; border-radius: var(--radius); text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .15s, background .2s; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-dark { background: var(--ink); color: var(--white); }
+  .btn-dark:hover { background: #2A2660; }
+  .btn-light { background: var(--lav); color: var(--ink); }
+  .btn-light:hover { background: #D9D9F5; }
+
+  /* HERO */
+  .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; padding: 7rem 1.5rem 5rem; }
+  #net { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
+  .hero-inner { position: relative; z-index: 1; max-width: 860px; }
+  .brandline { display: flex; align-items: center; justify-content: center; gap: 1.2rem; font-size: 1.6rem; letter-spacing: .22em; text-transform: uppercase; font-weight: 300; }
+  .brandline .logo { width: 72px; height: 72px; }
+  .rule { width: 150px; height: 1px; background: var(--ink); margin: 1.2rem auto 2.2rem; }
+  .typed { display: inline-block; font-family: 'Fira Code', monospace; font-size: 1.05rem; color: var(--accent); background: var(--lav); padding: .2rem .7rem; border-radius: 4px; min-height: 2rem; }
+  .typed::after { content: ''; display: inline-block; width: 2px; height: 1.1em; background: var(--accent); margin-left: 3px; vertical-align: -3px; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  h1 { font-family: 'Bitter', serif; font-size: clamp(2.6rem, 7vw, 4.8rem); line-height: 1.1; color: var(--ink); margin: .6rem 0 1.4rem; letter-spacing: -.02em; }
+  .lead { font-size: 1.2rem; max-width: 640px; margin: 0 auto 2rem; color: var(--text); }
+  .lead strong { font-weight: 500; }
+  .hero-cta { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+  .socials { display: flex; justify-content: center; gap: 1.8rem; color: var(--muted); font-size: 1rem; flex-wrap: wrap; }
+  .socials a { display: inline-flex; align-items: center; gap: .5rem; text-decoration: none; }
+  .socials a:hover { color: var(--accent); }
+  .socials svg { width: 22px; height: 22px; fill: currentColor; }
+  .chevron { position: absolute; bottom: 1.6rem; left: 50%; transform: translateX(-50%); z-index: 1; width: 44px; animation: bob 2.2s ease-in-out infinite; }
+  @keyframes bob { 50% { transform: translate(-50%, 8px); } }
+
+  /* GENERIC SECTION HEAD */
+  .block { padding: 6rem 0; }
+  .block.alt { background: var(--lav-soft); }
+  .tag { display: inline-block; font-family: 'Fira Code', monospace; font-size: .95rem; color: var(--accent); background: var(--lav); padding: .15rem .7rem; border-radius: 4px; margin-bottom: .8rem; }
+  h2 { font-family: 'Bitter', serif; font-size: clamp(2rem, 4vw, 2.7rem); color: var(--ink); line-height: 1.15; padding-bottom: 1rem; border-bottom: 1px solid var(--lav-line); margin-bottom: 1.6rem; }
+  .intro { max-width: 760px; margin-bottom: 2.4rem; }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 340px 1fr; gap: 3rem; align-items: start; }
+  .photo { width: 100%; aspect-ratio: 1; border-radius: var(--radius); background: linear-gradient(135deg, var(--lav) 0%, #CFCFF3 100%); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photo .initials { font-family: 'Bitter', serif; font-size: 5rem; color: var(--accent); letter-spacing: .05em; }
+  .facts { list-style: none; margin-top: 1.2rem; font-size: .95rem; color: var(--muted); }
+  .facts li { padding: .5rem 0; border-bottom: 1px solid var(--lav-line); display: flex; justify-content: space-between; gap: 1rem; }
+  .facts li span:last-child { color: var(--text); text-align: right; }
+  .about-text p { margin-bottom: 1rem; }
+  .about-text strong { font-weight: 500; }
+
+  /* SKILLS */
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
+  .skill-title { font-family: 'Fira Code', monospace; font-size: .85rem; color: var(--accent); margin-bottom: .8rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .chip { background: var(--lav); color: var(--ink); padding: .3rem .8rem; border-radius: 4px; font-size: .92rem; }
+
+  /* EXPERIENCE LIST */
+  .xp { border-top: 1px solid var(--lav-line); }
+  .xp details { border-bottom: 1px solid var(--lav-line); }
+  .xp summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 2.5rem 1fr auto; gap: 1rem; align-items: center; padding: 1.1rem 0; }
+  .xp summary::-webkit-details-marker { display: none; }
+  .xp .num { font-family: 'Fira Code', monospace; color: var(--accent); font-size: 1rem; }
+  .xp .role { font-family: 'Bitter', serif; font-size: 1.3rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+  .xp .org { display: block; font-family: 'Roboto', sans-serif; font-weight: 400; font-size: .92rem; color: var(--muted); margin-top: .1rem; }
+  .more { font-family: 'Bitter', serif; font-size: .95rem; background: var(--lav); padding: .4rem .9rem; border-radius: var(--radius); color: var(--ink); white-space: nowrap; }
+  .more::after { content: ' ▾'; }
+  details[open] .more::after { content: ' ▴'; }
+  .xp .body { padding: 0 0 1.4rem 3.5rem; max-width: 780px; color: var(--text); }
+  .xp .date { font-family: 'Fira Code', monospace; font-size: .85rem; color: var(--muted); display: block; margin-bottom: .4rem; }
+
+  /* PROJECTS */
+  .filters { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2rem; }
+  .filter { font-family: 'Bitter', serif; font-size: .95rem; padding: .45rem 1rem; border-radius: var(--radius); border: 1px solid var(--lav-line); background: var(--white); color: var(--ink); cursor: pointer; }
+  .filter:hover { background: var(--lav); }
+  .filter.active { background: var(--ink); color: var(--white); border-color: var(--ink); }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.6rem; }
+  .card { background: var(--white); border: 1px solid var(--lav-line); border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; transition: transform .2s, box-shadow .2s; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(74,63,176,.12); }
+  .card.hide { display: none; }
+  .thumb { aspect-ratio: 16/10; background: var(--lav); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--lav-line); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb svg { width: 70%; height: 70%; }
+  .card-body { padding: 1.3rem 1.4rem 1.5rem; display: flex; flex-direction: column; gap: .5rem; flex: 1; }
+  .cat { font-family: 'Fira Code', monospace; font-size: .8rem; color: var(--accent); }
+  .card h3 { font-family: 'Bitter', serif; font-size: 1.25rem; line-height: 1.3; color: var(--ink); }
+  .card p { font-size: .95rem; color: var(--muted); line-height: 1.6; }
+  .card .chips { margin-top: auto; padding-top: .6rem; }
+  .card .chip { font-size: .8rem; padding: .15rem .6rem; }
+  .card a.view { margin-top: .6rem; font-family: 'Bitter', serif; font-size: .95rem; color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--lav-deep); align-self: flex-start; }
+  .card a.view:hover { color: var(--ink); }
+
+  /* EDUCATION / CERTS */
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .edu { border-left: 3px solid var(--lav-deep); padding: .2rem 0 .2rem 1.2rem; margin-bottom: 1.4rem; }
+  .edu .t { font-family: 'Bitter', serif; font-size: 1.1rem; font-weight: 600; color: var(--ink); line-height: 1.35; }
+  .edu .s { font-size: .92rem; color: var(--muted); }
+  .edu .d { font-family: 'Fira Code', monospace; font-size: .8rem; color: var(--accent); margin-top: .2rem; }
+  .edu a { text-decoration: none; }
+  .edu a:hover .t { color: var(--accent); }
+  .badge { display: inline-block; background: var(--lav); color: var(--accent); font-family: 'Fira Code', monospace; font-size: .82rem; padding: .1rem .6rem; border-radius: 4px; margin-top: .4rem; }
+  h3.sub { font-family: 'Fira Code', monospace; font-size: .9rem; font-weight: 500; color: var(--accent); margin: 2rem 0 1rem; }
+
+  /* CONTACT */
+  .contact { text-align: center; background: var(--lav-soft); padding: 7rem 1.5rem; }
+  .contact h2 { border: none; padding-bottom: 0; margin-bottom: 1rem; }
+  .contact p { max-width: 560px; margin: 0 auto 1.8rem; }
+  .contact p a { text-decoration: underline; }
+  footer { max-width: 1120px; margin: 0 auto; padding: 2rem 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: .6rem; color: var(--muted); font-size: .92rem; border-top: 1px solid var(--lav-line); }
+
+  /* reveal (only when JS is on) */
+  .js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+  .js .reveal.visible { opacity: 1; transform: none; }
+
+  @media (max-width: 860px) {
+    .nav-links { display: none; }
+    .about-grid, .two { grid-template-columns: 1fr; gap: 2rem; }
+    .photo { max-width: 280px; }
+    .block { padding: 4rem 0; }
+    .xp .body { padding-left: 0; }
+    .xp summary { grid-template-columns: 2rem 1fr auto; }
+    .brandline { font-size: 1.1rem; gap: .7rem; letter-spacing: .14em; }
+    .brandline .logo { width: 52px; height: 52px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .chevron { animation: none; }
+    .js .reveal { opacity: 1; transform: none; transition: none; }
+  }
 </style>
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-<nav class="nav"><div class="wrap navin">
-<a class="mini-logo" href="#top" aria-label="Hamsa Elassal home"><svg viewBox="0 0 64 64" role="img" aria-label="Bar chart logo"><circle cx="32" cy="32" r="28" fill="white" stroke="#17152f" stroke-width="2"/><rect x="17" y="36" width="8" height="14" fill="#17152f"/><rect x="29" y="25" width="8" height="25" fill="#5146c8"/><rect x="41" y="14" width="8" height="36" fill="#aaa5e8"/></svg></a>
-<div class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a class="contactbtn" href="#contact">Contact</a></div>
-</div></nav>
-<main id="top">
-<header class="hero">
-<canvas class="network" id="network" aria-hidden="true"></canvas>
-<div class="hero-inner">
-<div class="brandline"><span>Hamsa</span><svg class="brandmark" viewBox="0 0 100 100" aria-label="Hamsa logo"><circle cx="50" cy="50" r="48" fill="white" stroke="#17152f" stroke-width="3"/><rect x="29" y="55" width="11" height="20" fill="#17152f"/><rect x="46" y="39" width="11" height="36" fill="#5146c8"/><rect x="63" y="23" width="11" height="52" fill="#aaa5e8"/></svg><span>Elassal</span></div>
-<div class="brand-rule"></div>
-<div class="open-pill">open</div>
-<h1>I'm a data analyst.</h1>
-<p>I build dashboards and reports that turn complex data into clear answers, using <strong>Excel, SQL, Python and Power BI.</strong> Statistics graduate from Cairo University, with hands-on experience in data analysis, visualization and reporting.</p>
-<div class="hero-actions"><a class="btn" href="#contact">Get in touch</a><a class="btn secondary" href="#projects">See my work</a></div>
-</div></header>
-<section id="about"><div class="wrap"><div class="section-kicker">01 / About</div><h2 class="section-title">A little about me</h2><div class="about-grid">
-<div class="paper"><p>I'm a Statistics graduate from Cairo University's Faculty of Economics and Political Science, with a minor in Social Computing Science. I enjoy turning raw data into meaningful insights through analysis, visualization and clear communication.</p><p class="muted">My experience includes data analysis training at the National Telecommunication Institute, dashboard development with the Egyptian Cabinet's Information and Decision Support Center, and working with merchants in my current graduate trainee role at Bosta.</p></div>
-<div class="facts"><div class="fact"><small>Degree</small><b>B.Sc. Statistics</b></div><div class="fact"><small>University</small><b>Cairo University</b></div><div class="fact"><small>Minor</small><b>Social Computing Science</b></div><div class="fact"><small>Location</small><b>Cairo, Egypt</b></div></div>
-</div></div></section>
-<section id="experience"><div class="wrap"><div class="section-kicker">02 / Experience</div><h2 class="section-title">Experience</h2><div class="timeline">
-<article class="job"><div class="date">SEP 2026 — PRESENT</div><div><h3>Sales Graduate Trainee</h3><div class="org">Bosta · 4ward Sales Graduate Program</div><p>Engage with merchants, understand their business needs and support onboarding to Bosta's shipping services.</p></div></article>
-<article class="job"><div class="date">NOV 2025 — JAN 2026</div><div><h3>Data Analysis Intern</h3><div class="org">National Telecommunication Institute (NTI)</div><p>Cleaned, processed and visualized datasets using SQL, Python and Excel, building practical skills in data analysis and reporting.</p></div></article>
-<article class="job"><div class="date">AUG 2025</div><div><h3>Power BI Team Member</h3><div class="org">Egyptian Cabinet · Information and Decision Support Center (IDSC)</div><p>Contributed to dashboards for the First 1,000 Golden Days initiative, translating indicators into clear visuals for decision-makers.</p></div></article>
-<article class="job"><div class="date">APR 2024 — OCT 2024</div><div><h3>Data Analyst Trainee</h3><div class="org">Digital Egypt Pioneers Initiative</div><p>Developed foundational skills in Excel, Python, R, SQL, Power BI and Tableau, and practiced building dashboards and reports.</p></div></article>
-</div></div></section>
-<section id="projects"><div class="wrap"><div class="section-kicker">03 / Selected work</div><h2 class="section-title">Projects</h2><div class="projects">
-<article class="project"><div class="projectno">PROJECT 01 · PYTHON / EDA</div><h3>Hotel Booking Demand Analysis</h3><p>Exploratory analysis of hotel booking demand data, investigating booking patterns and factors associated with cancellations.</p><div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span></div><a class="projectlink" href="https://github.com/Hamsa-Elasaal/Hotel-Booking-Demand-python" target="_blank" rel="noopener">View project on GitHub ↗</a></article>
-<article class="project"><div class="projectno">PROJECT 02 · WEB DEVELOPMENT</div><h3>The AGORA Quiz</h3><p>An interactive quiz project with Python and world-capital questions, answer feedback, scoring and progress tracking.</p><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div><a class="projectlink" href="https://github.com/Hamsa-Elasaal/The-AGORA" target="_blank" rel="noopener">View project on GitHub ↗</a></article>
-</div></div></section>
-<section id="education"><div class="wrap"><div class="section-kicker">04 / Education</div><h2 class="section-title">Education & certifications</h2><div class="education-grid">
-<div class="paper"><h3>Bachelor's Degree in Statistics</h3><p class="muted">Cairo University · Faculty of Economics and Political Science<br>Minor: Social Computing Science</p><p><strong>2022 — 2026</strong></p></div>
-<div class="paper"><h3>Certifications</h3>
-<div class="cert"><div>Google Advanced Data Analytics Professional Certificate<small>Google · Coursera · 2025</small></div><a href="https://coursera.org/verify/professional-cert/SHZJEBLFZXA5" target="_blank" rel="noopener">Verify ↗</a></div>
-<div class="cert"><div>Modern Big Data Analysis with SQL Specialization<small>Cloudera · Coursera · 2026</small></div><a href="https://coursera.org/verify/specialization/9J297XCBUBW7" target="_blank" rel="noopener">Verify ↗</a></div>
-<div class="cert"><div>Excel, Statistics & Hypothesis Testing courses<small>Rice University · Coursera · 2026</small></div><span class="muted">Coursera</span></div>
-<div class="cert"><div>SPSS Fundamentals for Data Analysis<small>EDUCBA · Coursera · 2026</small></div><a href="https://coursera.org/verify/10TQ033ID752" target="_blank" rel="noopener">Verify ↗</a></div>
-</div></div></div></section>
-<section id="contact"><div class="wrap"><div class="contact-panel"><div><div class="section-kicker">05 / Contact</div><h2>Let's connect.</h2><p>Interested in data and analytics opportunities? I'd love to hear from you.</p></div><div class="contact-links"><a class="btn" href="mailto:hamsahani52@gmail.com">Email me</a><a class="btn secondary" href="https://www.linkedin.com/in/hamsa-h-el-assal-881882213" target="_blank" rel="noopener">LinkedIn</a><a class="btn secondary" href="https://github.com/Hamsa-Elasaal" target="_blank" rel="noopener">GitHub</a></div></div></div></section>
-</main>
-<footer class="wrap footer"><span>© 2026 Hamsa Elassal</span><span>Data · Analysis · Insight</span></footer>
+
+<!-- Reusable logo: simple bar-chart mark inside a circle -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="22" fill="none" stroke="#15132E" stroke-width="1.5"/>
+    <rect x="14" y="26" width="5" height="9" fill="#15132E"/>
+    <rect x="21.5" y="19" width="5" height="16" fill="#4A3FB0"/>
+    <rect x="29" y="13" width="5" height="22" fill="#A9A9DC"/>
+  </symbol>
+</svg>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#top" aria-label="Home"><svg class="logo"><use href="#mark"/></svg></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+      <a class="btn btn-dark" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <div class="brandline"><span>Hamsa</span><svg class="logo"><use href="#mark"/></svg><span>Elassal</span></div>
+    <div class="rule"></div>
+    <span class="typed" id="typed" aria-hidden="true">Hello</span>
+    <h1>I'm a data analyst.</h1>
+    <p class="lead">I build dashboards and reports that turn messy data into clear answers, with <strong>Excel, SQL, Python and Power BI</strong>. Statistics graduate from Cairo University, trained at NTI, ITI and the Egyptian Cabinet's IDSC, with dashboards that cut reporting time by 30%.</p>
+    <div class="hero-cta">
+      <a class="btn btn-dark" href="#contact">Get in touch</a>
+      <a class="btn btn-light" href="#projects">See my work</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/hamsa-h-el-assal-881882213" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>LinkedIn</a>
+      <a href="mailto:hamsahani52@gmail.com"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.5 2v.4l7.5 5.1 7.5-5.1V7zm15 2.8-7.5 5.1-7.5-5.1V17h15z"/></svg>Email</a>
+      <a href="https://github.com/Hamsa-Elasaal" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a>
+    </div>
+  </div>
+  <svg class="chevron" viewBox="0 0 44 14" fill="none" stroke="#15132E" stroke-width="2.5" stroke-linecap="round"><path d="M3 3l19 8 19-8"/></svg>
+</header>
+
+<!-- ABOUT -->
+<section class="block alt" id="about">
+  <div class="wrap">
+    <div class="reveal"><span class="tag">about</span><h2>My story</h2></div>
+    <div class="about-grid reveal">
+      <div>
+        <!-- Put your photo next to this file as photo.jpg and it will show up automatically -->
+        <div class="photo"><img src="photo.jpg" alt="Hamsa Hani Elassal" onerror="this.remove()"><span class="initials" id="ini">HE</span></div>
+        <ul class="facts">
+          <li><span>Based in</span><span>Cairo, Egypt</span></li>
+          <li><span>Degree</span><span>B.Sc. Statistics</span></li>
+          <li><span>University</span><span>Cairo University</span></li>
+          <li><span>GPA</span><span>3.532 / 4.0</span></li>
+          <li><span>Now</span><span>Bosta, Sales Trainee</span></li>
+        </ul>
+      </div>
+      <div class="about-text">
+        <p>I studied <strong>Statistics at Cairo University</strong>, with a minor in Social Computing Science. What I enjoy most is the step where numbers turn into something a decision-maker can actually use: a clear chart, a KPI, a dashboard.</p>
+        <p>Over the last two years I trained and interned at <strong>NTI, ITI, the Egyptian Cabinet's IDSC</strong> and the <strong>Financial Regulatory Authority</strong>, building dashboards and cleaning data with SQL, Python, Power BI and Excel. I also completed the <strong>Google Advanced Data Analytics Professional Certificate</strong>.</p>
+        <p>Today I work with merchants at <strong>Bosta</strong> and I'm looking for my first role as a data or business intelligence analyst.</p>
+        <p><a class="btn btn-dark" href="#contact">Contact</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="block" id="skills">
+  <div class="wrap">
+    <div class="reveal"><span class="tag">toolbox</span><h2>What I work with</h2></div>
+    <div class="skills-grid reveal">
+      <div><div class="skill-title">languages &amp; data</div><div class="chips"><span class="chip">Python</span><span class="chip">R</span><span class="chip">SQL</span><span class="chip">SPSS</span></div></div>
+      <div><div class="skill-title">visualization &amp; BI</div><div class="chips"><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Excel (Advanced)</span><span class="chip">Dashboard Design</span></div></div>
+      <div><div class="skill-title">analytics</div><div class="chips"><span class="chip">Statistical Analysis</span><span class="chip">Hypothesis Testing</span><span class="chip">Regression</span><span class="chip">Predictive Analytics</span><span class="chip">Feature Engineering</span><span class="chip">ETL</span></div></div>
+      <div><div class="skill-title">how I work</div><div class="chips"><span class="chip">Data Cleaning</span><span class="chip">EDA</span><span class="chip">KPI Development</span><span class="chip">Stakeholder Communication</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="block alt" id="experience">
+  <div class="wrap">
+    <div class="reveal"><span class="tag">experience</span><h2>Where I've worked</h2>
+    <p class="intro">Internships, training programs and my current role. Open any row for the details.</p></div>
+    <div class="xp reveal">
+      <details><summary><span class="num">01</span><span class="role">Sales Graduate Trainee<span class="org">Bosta · 4ward Sales Graduate Program</span></span><span class="more">Read more</span></summary><div class="body"><span class="date">Sep 2026 – Present</span>Working with merchants in the General Trade department: analyzing their shipping data and needs to onboard them to Bosta's services.</div></details>
+      <details><summary><span class="num">02</span><span class="role">Data Analysis Intern<span class="org">National Telecommunication Institute (NTI)</span></span><span class="more">Read more</span></summary><div class="body"><span class="date">Nov 2025 – Jan 2026</span>Trained in data analysis using SQL, Python, Excel, Power BI and Tableau to clean, process and visualize datasets. Assisted in generating insights and reports to support data-driven decisions.</div></details>
+      <details><summary><span class="num">03</span><span class="role">Research Member<span class="org">EMAM Research Center</span></span><span class="more">Read more</span></summary><div class="body"><span class="date">Jan 2025 – Nov 2025</span>Conducted research supporting the UN Sustainable Development Goals (SDGs). Completed DataCamp courses in Python, statistics and machine learning.</div></details>
+      <details><summary><span class="num">04</span><span class="role">Power BI Team Member<span class="org">Egyptian Cabinet's IDSC</span></span><span class="more">Read more</span></summary><div class="body"><span class="date">Aug 2025</span>Contributed to dashboards for the "First 1,000 Golden Days" presidential initiative, turning indicator data into visuals for decision-makers.</div></details>
+      <details><summary><span class="num">05</span><span class="role">Business Intelligence Analyst Intern<span class="org">ITI</span></span><span class="more">Read more</span></summary><div class="body"><span class="date">Aug 2025</span>Applied BI and analytics techniques to real-world business cases. Designed dashboards and reports using Power BI and SQL to support decision-making.</div></details>
+      <details><summary><span class="num">06</span><span class="role">ESG Research Intern<span class="org">Research Organization</span></span><span class="more">Read more</span></summary><div class="body"><span class="date">Jul 2024 – May 2025</span>Collected and analyzed ESG performance data for 2,000+ companies, supporting sustainability reporting. Developed customized action plans using tech tools for data tracking.</div></details>
+      <details><summary><span class="num">07</span><span class="role">Data Analyst Trainee<span class="org">Digital Egypt Pioneers Initiative</span></span><span class="more">Read more</span></summary><div class="body"><span class="date">Apr 2024 – Oct 2024</span>Learned Excel, Python, R, SQL, Power BI and Tableau. Built interactive dashboards that reduced reporting time by 30%.</div></details>
+      <details><summary><span class="num">08</span><span class="role">Research &amp; Development Intern<span class="org">Financial Regulatory Authority</span></span><span class="more">Read more</span></summary><div class="body"><span class="date">Aug 2024</span>Analyzed departmental data and visualized findings to support faster decision-making.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="block" id="projects">
+  <div class="wrap">
+    <div class="reveal"><span class="tag">projects</span><h2>Portfolio</h2>
+    <p class="intro">Dashboards, data explorations and research work. Each card links to the code or the dashboard when it is public.</p></div>
+    <div class="filters reveal" id="filters">
+      <button class="filter active" data-f="all">Show all</button>
+      <button class="filter" data-f="dashboard">Dashboards</button>
+      <button class="filter" data-f="python">Python</button>
+      <button class="filter" data-f="research">Research</button>
+    </div>
+    <div class="cards reveal" id="cards">
+
+      <!-- To use a real screenshot, replace the <svg> inside .thumb with: <img src="images/your-file.png" alt="..."> -->
+      <article class="card" data-cat="dashboard">
+        <div class="thumb"><svg viewBox="0 0 200 120" aria-hidden="true"><rect x="22" y="62" width="22" height="40" fill="#A9A9DC"/><rect x="54" y="42" width="22" height="60" fill="#4A3FB0"/><rect x="86" y="54" width="22" height="48" fill="#A9A9DC"/><rect x="118" y="26" width="22" height="76" fill="#4A3FB0"/><rect x="150" y="48" width="22" height="54" fill="#A9A9DC"/><path d="M15 104h170" stroke="#15132E" stroke-width="1.5"/></svg></div>
+        <div class="card-body"><span class="cat">dashboard</span><h3>Marketing Campaign Effectiveness</h3><p>Analyzed 2,000 marketing campaigns across channels, age groups, locations and time. Calculated KPIs from impressions, clicks, conversions, spend and revenue, and built a dashboard to compare channel and audience performance.</p><div class="chips"><span class="chip">Excel</span><span class="chip">KPI Analysis</span><span class="chip">Dashboard Design</span></div></div>
+      </article>
+
+      <article class="card" data-cat="python">
+        <div class="thumb"><svg viewBox="0 0 200 120" aria-hidden="true"><path d="M15 104h170M15 104V12" stroke="#15132E" stroke-width="1.5" fill="none"/><g fill="#4A3FB0"><circle cx="40" cy="86" r="4"/><circle cx="62" cy="74" r="4"/><circle cx="84" cy="70" r="4"/><circle cx="106" cy="52" r="4"/><circle cx="128" cy="48" r="4"/><circle cx="150" cy="32" r="4"/><circle cx="172" cy="28" r="4"/></g><path d="M32 90L178 24" stroke="#A9A9DC" stroke-width="2.5"/></svg></div>
+        <div class="card-body"><span class="cat">python · notebook</span><h3>Hotel Booking Demand Analysis</h3><p>Exploratory data analysis of the Hotel Booking Demand dataset in Python, looking at booking patterns with Jupyter Notebook.</p><div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">EDA</span></div><a class="view" href="https://github.com/Hamsa-Elasaal/Hotel-Booking-Demand-pyhton" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+      </article>
+
+      <article class="card" data-cat="dashboard">
+        <div class="thumb"><svg viewBox="0 0 200 120" aria-hidden="true"><circle cx="60" cy="60" r="38" fill="none" stroke="#A9A9DC" stroke-width="18"/><circle cx="60" cy="60" r="38" fill="none" stroke="#4A3FB0" stroke-width="18" stroke-dasharray="110 240" transform="rotate(-90 60 60)"/><rect x="118" y="34" width="62" height="8" fill="#4A3FB0"/><rect x="118" y="54" width="46" height="8" fill="#A9A9DC"/><rect x="118" y="74" width="54" height="8" fill="#A9A9DC"/></svg></div>
+        <div class="card-body"><span class="cat">dashboard · power bi</span><h3>Presidential Initiative: First 1,000 Golden Days</h3><p>Power BI dashboards for the Egyptian Cabinet's IDSC monitoring department, turning healthcare and child development indicators into clear visuals for decision-makers.</p><div class="chips"><span class="chip">Power BI</span><span class="chip">Data Visualization</span></div></div>
+      </article>
+
+      <article class="card" data-cat="research">
+        <div class="thumb"><svg viewBox="0 0 200 120" aria-hidden="true"><g fill="#A9A9DC"><circle cx="50" cy="40" r="16"/><circle cx="92" cy="70" r="22"/><circle cx="140" cy="38" r="12"/><circle cx="158" cy="82" r="16"/></g><g fill="#4A3FB0"><circle cx="50" cy="40" r="6"/><circle cx="92" cy="70" r="9"/><circle cx="158" cy="82" r="6"/></g></svg></div>
+        <div class="card-body"><span class="cat">research · esg</span><h3>ESG Performance Analytics for 2,000+ Companies</h3><p>Collected, cleaned and analyzed ESG performance data for over 2,000 companies and produced sustainability reports and tracking tools.</p><div class="chips"><span class="chip">Python</span><span class="chip">Excel</span><span class="chip">Data Cleaning</span></div></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="block alt" id="education">
+  <div class="wrap two">
+    <div class="reveal">
+      <span class="tag">education</span><h2>Studies</h2>
+      <div class="edu"><div class="t">B.Sc. Statistics, Minor: Social Computing Science</div><div class="s">Cairo University · Faculty of Economics and Political Science</div><div class="d">Jul 2022 – Jul 2026</div><span class="badge">GPA 3.532 / 4.0</span></div>
+      <h3 class="sub">volunteer work</h3>
+      <div class="edu"><div class="t">Vice President, HR</div><div class="s">Future Builders Youth Entity</div><div class="d">Aug 2023 – May 2024</div></div>
+      <div class="edu"><div class="t">President, Civil Society &amp; Human Rights</div><div class="s">ALMUN Model</div><div class="d">Dec 2023 – Jun 2024</div></div>
+    </div>
+    <div class="reveal">
+      <span class="tag">certifications</span><h2>Certificates</h2>
+      <div class="edu"><a href="https://coursera.org/verify/professional-cert/SHZJEBLFZXA5" target="_blank" rel="noopener"><div class="t">Google Advanced Data Analytics</div><div class="s">Professional Certificate · Google via Coursera</div><div class="d">Sep 2025</div></a></div>
+      <div class="edu"><a href="https://coursera.org/verify/specialization/9J297XCBUBW7" target="_blank" rel="noopener"><div class="t">Modern Big Data Analysis with SQL</div><div class="s">Specialization · Cloudera via Coursera</div><div class="d">Jan 2026</div></a></div>
+      <div class="edu"><a href="https://coursera.org/verify/PWU5SIMRQ1JT" target="_blank" rel="noopener"><div class="t">Introduction to Data Analysis Using Excel</div><div class="s">Rice University via Coursera</div><div class="d">Feb 2026</div></a></div>
+      <div class="edu"><a href="https://coursera.org/verify/1UVEB5576JPC" target="_blank" rel="noopener"><div class="t">Basic Data Descriptors, Statistical Distributions, and Application to Business Decisions</div><div class="s">Rice University via Coursera</div><div class="d">Feb 2026</div></a></div>
+      <div class="edu"><a href="https://coursera.org/verify/XPNEPWBPYD87" target="_blank" rel="noopener"><div class="t">Business Applications of Hypothesis Testing and Confidence Interval Estimation</div><div class="s">Rice University via Coursera</div><div class="d">Mar 2026</div></a></div>
+      <div class="edu"><a href="https://coursera.org/verify/10TQ033ID752" target="_blank" rel="noopener"><div class="t">Apply SPSS Fundamentals for Data Analysis</div><div class="s">EDUCBA via Coursera</div><div class="d">Jul 2026</div></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="reveal">
+    <span class="tag">contact</span>
+    <h2>Let's talk</h2>
+    <p>Have a role, a question or a project to discuss? I'd be glad to hear from you at <a href="mailto:hamsahani52@gmail.com">hamsahani52@gmail.com</a>.</p>
+    <div class="hero-cta">
+      <a class="btn btn-light" href="https://github.com/Hamsa-Elasaal" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-light" href="https://www.linkedin.com/in/hamsa-h-el-assal-881882213" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-dark" href="mailto:hamsahani52@gmail.com">Email me</a>
+    </div>
+  </div>
+</section>
+
+<footer><span>Copyright © Hamsa Hani Elassal 2026</span><span>Cairo, Egypt</span></footer>
+
 <script>
-(()=>{const c=document.getElementById('network'),ctx=c.getContext('2d');let pts=[],w=0,h=0;function setup(){const dpr=Math.min(devicePixelRatio||1,2);w=c.clientWidth;h=c.clientHeight;c.width=w*dpr;c.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);pts=Array.from({length:Math.max(38,Math.floor(w*h/14500))},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.12,vy:(Math.random()-.5)*.12,r:1.5+Math.random()*2.3}));draw()}function draw(){ctx.clearRect(0,0,w,h);for(const p of pts){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1}for(let i=0;i<pts.length;i++){for(let j=i+1;j<pts.length;j++){const a=pts[i],b=pts[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<155){ctx.strokeStyle='rgba(126,119,218,'+(1-d/155)*.19+')';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke()}}}for(const p of pts){ctx.fillStyle='rgba(126,119,218,.48)';ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill()}requestAnimationFrame(draw)}let raf;const resize=()=>{cancelAnimationFrame(raf);setup()};window.addEventListener('resize',resize,{passive:true});setup()})();
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* nav border on scroll */
+  var nav = document.getElementById('nav');
+  addEventListener('scroll', function () { nav.classList.toggle('scrolled', scrollY > 10); }, { passive: true });
+
+  /* scroll reveal */
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }); }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(function (r) { io.observe(r); });
+
+  /* hide the initials fallback when a photo loads */
+  var img = document.querySelector('.photo img'), ini = document.getElementById('ini');
+  if (img) { img.addEventListener('load', function () { ini.style.display = 'none'; }); if (img.complete && img.naturalWidth) ini.style.display = 'none'; }
+
+  /* project filters */
+  var cards = document.querySelectorAll('#cards .card');
+  document.getElementById('filters').addEventListener('click', function (e) {
+    var b = e.target.closest('.filter'); if (!b) return;
+    document.querySelectorAll('.filter').forEach(function (x) { x.classList.remove('active'); });
+    b.classList.add('active');
+    cards.forEach(function (c) { c.classList.toggle('hide', b.dataset.f !== 'all' && c.dataset.cat !== b.dataset.f); });
+  });
+
+  /* typed tag */
+  var words = ['Hello', 'Excel · SQL · Python · Power BI', 'open to opportunities'], wi = 0, ci = words[0].length, erasing = false, el = document.getElementById('typed');
+  function tick() {
+    var w = words[wi];
+    if (!erasing) {
+      if (ci < w.length) { ci++; el.textContent = w.slice(0, ci); return setTimeout(tick, 70); }
+      erasing = true; return setTimeout(tick, 1800);
+    }
+    if (ci > 0) { ci--; el.textContent = w.slice(0, ci) || '\u00A0'; return setTimeout(tick, 35); }
+    erasing = false; wi = (wi + 1) % words.length; return setTimeout(tick, 300);
+  }
+  if (!reduce) setTimeout(tick, 2200);
+
+  /* animated network background */
+  var cv = document.getElementById('net'), ctx = cv.getContext('2d'), W, H, pts = [], mouse = { x: -999, y: -999 }, raf;
+  function size() {
+    var r = cv.getBoundingClientRect(), d = Math.min(devicePixelRatio || 1, 2);
+    W = r.width; H = r.height; cv.width = W * d; cv.height = H * d; ctx.setTransform(d, 0, 0, d, 0, 0);
+    var n = Math.round(Math.min(90, Math.max(35, W * H / 14000)));
+    pts = [];
+    for (var i = 0; i < n; i++) pts.push({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - .5) * .35, vy: (Math.random() - .5) * .35, r: 1.5 + Math.random() * 2.5 });
+  }
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    var L = 140;
+    for (var i = 0; i < pts.length; i++) {
+      var p = pts[i];
+      if (!reduce) {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > W) p.vx *= -1;
+        if (p.y < 0 || p.y > H) p.vy *= -1;
+        var dx = p.x - mouse.x, dy = p.y - mouse.y, dd = dx * dx + dy * dy;
+        if (dd < 12000) { p.x += dx * .004; p.y += dy * .004; }
+      }
+      for (var j = i + 1; j < pts.length; j++) {
+        var q = pts[j], ax = p.x - q.x, ay = p.y - q.y, d = Math.sqrt(ax * ax + ay * ay);
+        if (d < L) { ctx.strokeStyle = 'rgba(169,169,220,' + (0.55 * (1 - d / L)) + ')'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke(); }
+      }
+      ctx.fillStyle = 'rgba(169,169,220,.75)'; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.2832); ctx.fill();
+    }
+    if (!reduce) raf = requestAnimationFrame(draw);
+  }
+  size(); draw();
+  addEventListener('resize', function () { cancelAnimationFrame(raf); size(); draw(); });
+  document.addEventListener('visibilitychange', function () { if (document.hidden) cancelAnimationFrame(raf); else if (!reduce) { cancelAnimationFrame(raf); draw(); } });
+  cv.parentElement.addEventListener('mousemove', function (e) { var r = cv.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+  cv.parentElement.addEventListener('mouseleave', function () { mouse.x = mouse.y = -999; });
+})();
 </script>
-</body></html>
+</body>
+</html>
