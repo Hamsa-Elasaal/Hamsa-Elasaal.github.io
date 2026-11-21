@@ -18,4 +18,6 @@ Open `index.html` in a browser.
 
 ## Contact
 
-(keep your existing Contact section here)
+Email: [hamsahani52@gmail.com](mailto:hamsahani52@gmail.com)
+LinkedIn: https://www.linkedin.com/in/hamsa-h-el-assal-881882213
+GitHub: https://github.com/Hamsa-Elasaal
