@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hamsa-elasaal.github.io/sitemap.xml
